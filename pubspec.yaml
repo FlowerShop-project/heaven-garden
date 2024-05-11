@@ -1,0 +1,52 @@
+name: flowershop
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.5 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.2.1
+  table_calendar: ^3.0.2
+  carousel_slider: ^4.0.0
+  webview_flutter: ^4.7.0
+  google_nav_bar: ^5.0.6
+  provider: ^6.1.2
+  url_launcher: ^6.0.9 
+  flutter_facebook_auth: ^6.2.0
+  # firebase_core: ^1.10.0
+  # firebase_auth: 3.11.2
+  # cloud_firestore: ^3.1.0
+ 
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/image/
+    - lib/image/roses/
+    - lib/image/Lily/
+    - lib/image/peony/
+    - lib/image/tulip/
+    - lib/image/dahlia/
+    - lib/image/hydrangea/
+    - lib/image/ex/
+    - lib/image/details/
+    - lib/image/Home/  # Include subdirectory Home
+    - lib/image/guess/ 
+    - lib/image/occasion/
+    - lib/image/funeral/
+    - lib/image/wedding/
+    - lib/image/visiting_patients/
+    - lib/image/personal_use/
+    - lib/image/organization/
+    - lib/image/Congratulation/
