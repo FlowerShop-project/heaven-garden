@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'Home_Page_Widget.dart';
+=======
+import 'signin_screen.dart';
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -66,7 +70,11 @@ class WelcomeScreen extends StatelessWidget {
                        Navigator.push(
                        context,
                         MaterialPageRoute(
+<<<<<<< HEAD
                          builder: (context) => HomePageWidget(),
+=======
+                         builder: (context) => const SignInScreen(),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                         ),
                       );
                     },

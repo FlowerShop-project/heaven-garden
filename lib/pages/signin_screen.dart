@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+=======
+
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
 import 'Home_Page_Widget.dart';
 import 'Register.dart';
 
 class SignInScreen extends StatelessWidget {
+<<<<<<< HEAD
   final TextEditingController emailController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   final GoogleSignIn _googleSignIn = GoogleSignIn();
   final FirebaseAuth _auth = FirebaseAuth.instance;
+=======
+  const SignInScreen({super.key});
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +27,11 @@ class SignInScreen extends StatelessWidget {
         child: Container(
           height: MediaQuery.of(context).size.height,
           width: MediaQuery.of(context).size.width,
+<<<<<<< HEAD
           decoration: BoxDecoration(
+=======
+          decoration: const BoxDecoration(
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
             image: DecorationImage(
               image: AssetImage('lib/image/10.jpg'),
               fit: BoxFit.cover,
@@ -38,12 +50,17 @@ class SignInScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
+<<<<<<< HEAD
                 SizedBox(height: 100),
+=======
+                const SizedBox(height: 100),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(
                       "SIGN IN",
+<<<<<<< HEAD
                       style: Theme.of(context).textTheme.headline6,
                     ),
                   ],
@@ -51,11 +68,24 @@ class SignInScreen extends StatelessWidget {
                 Spacer(),
                 Padding(
                   padding: const EdgeInsets.only(bottom: 20),
+=======
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                  ],
+                ),
+                const Spacer(),
+                const Padding(
+                  padding: EdgeInsets.only(bottom: 20),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       Padding(
+<<<<<<< HEAD
                         padding: const EdgeInsets.only(right: 16),
+=======
+                        padding: EdgeInsets.only(right: 16),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                         child: Icon(
                           Icons.alternate_email,
                           color: Colors.white,
@@ -63,22 +93,36 @@ class SignInScreen extends StatelessWidget {
                       ),
                       Expanded(
                         child: TextField(
+<<<<<<< HEAD
                           controller: emailController,
+=======
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                           decoration: InputDecoration(
                             hintText: "Email Address",
                             hintStyle: TextStyle(color: Colors.white),
                           ),
+<<<<<<< HEAD
                           style: TextStyle(color: Colors.white),
+=======
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                         ),
                       ),
                     ],
                   ),
                 ),
+<<<<<<< HEAD
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Padding(
                       padding: const EdgeInsets.only(right: 16),
+=======
+                const Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                      padding: EdgeInsets.only(right: 16),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                       child: Icon(
                         Icons.lock,
                         color: Colors.white,
@@ -86,22 +130,33 @@ class SignInScreen extends StatelessWidget {
                     ),
                     Expanded(
                       child: TextField(
+<<<<<<< HEAD
                         controller: passwordController,
                         obscureText: true, // ให้รหัสผ่านถูกซ่อน
+=======
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                         decoration: InputDecoration(
                           hintText: "Password",
                           hintStyle: TextStyle(color: Colors.white),
                         ),
+<<<<<<< HEAD
                         style: TextStyle(color: Colors.white),
+=======
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                       ),
                     ),
                   ],
                 ),
+<<<<<<< HEAD
+=======
+                const SizedBox(height: 20),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     ElevatedButton(
                       onPressed: () {
+<<<<<<< HEAD
                         _signInWithGoogle(context);
                       },
                       style: ElevatedButton.styleFrom(
@@ -144,15 +199,32 @@ class SignInScreen extends StatelessWidget {
                             ),
                           );
                         }
+=======
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HomePageWidget(),
+                            fullscreenDialog: false,
+                          ),
+                        );
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                       },
                       style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),
                         ),
+<<<<<<< HEAD
                         backgroundColor: const Color(0xFFF2BED1),
                         padding: EdgeInsets.symmetric(vertical: 12, horizontal: 24),
                       ),
                       child: Text(
+=======
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 12, horizontal: 24),
+                        backgroundColor: const Color(0xFFF2BED1),
+                      ),
+                      child: const Text(
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                         "SIGN IN",
                         style: TextStyle(
                           color: Colors.white,
@@ -163,7 +235,11 @@ class SignInScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+<<<<<<< HEAD
                 SizedBox(height: 10),
+=======
+                const SizedBox(height: 10),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
@@ -172,12 +248,20 @@ class SignInScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
+<<<<<<< HEAD
                             builder: (context) => RegisterPage(),
+=======
+                            builder: (context) => const RegisterPage(),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                             fullscreenDialog: false,
                           ),
                         );
                       },
+<<<<<<< HEAD
                       child: Text(
+=======
+                      child: const Text(
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                         "Never Sign In_Register?",
                         style: TextStyle(
                           color: Colors.white,
@@ -188,6 +272,7 @@ class SignInScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+<<<<<<< HEAD
                 SizedBox(height: 20),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
@@ -196,6 +281,13 @@ class SignInScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 40),
+=======
+                const SizedBox(height: 20),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[],
+                ),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
               ],
             ),
           ),
@@ -203,6 +295,7 @@ class SignInScreen extends StatelessWidget {
       ),
     );
   }
+<<<<<<< HEAD
 
   Future<void> _signInWithEmailAndPassword(BuildContext context) async {
     try {
@@ -296,4 +389,6 @@ class SignInScreen extends StatelessWidget {
         .then((value) => print('User added')) // Successful add operation
         .catchError((error) => print('Failed to add user: $error')); // Error during add operation
   }
+=======
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
 }

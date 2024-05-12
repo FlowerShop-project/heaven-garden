@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:firebase_auth/firebase_auth.dart';
 import 'signin_screen.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key});
+=======
+import 'Home_Page_Widget.dart';
+
+class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
 
   @override
   _RegisterPageState createState() => _RegisterPageState();
@@ -14,11 +21,15 @@ class _RegisterPageState extends State<RegisterPage> {
   final TextEditingController _lastNameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+<<<<<<< HEAD
   final TextEditingController _confirmPasswordController = TextEditingController();
+=======
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
 
   String firstNameErrorMessage = '';
   String lastNameErrorMessage = '';
   String emailErrorMessage = '';
+<<<<<<< HEAD
   String passwordErrorMessage = '';
 
   Future<void> registerWithEmailAndPassword() async {
@@ -55,6 +66,8 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 }
 
+=======
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
 
   @override
   Widget build(BuildContext context) {
@@ -182,6 +195,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       border: const OutlineInputBorder(),
                       fillColor: Colors.white.withOpacity(0.2),
                       filled: true,
+<<<<<<< HEAD
                       errorText: passwordErrorMessage.isNotEmpty ? passwordErrorMessage : null,
                     ),
                     style: const TextStyle(color: Colors.white),
@@ -197,6 +211,8 @@ class _RegisterPageState extends State<RegisterPage> {
                       fillColor: Colors.white.withOpacity(0.2),
                       filled: true,
                       errorText: passwordErrorMessage.isNotEmpty ? passwordErrorMessage : null,
+=======
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                     ),
                     style: const TextStyle(color: Colors.white),
                   ),
@@ -207,7 +223,10 @@ class _RegisterPageState extends State<RegisterPage> {
                       String lastName = _lastNameController.text.trim();
                       String email = _emailController.text.trim();
                       String password = _passwordController.text.trim();
+<<<<<<< HEAD
                       String confirmPassword = _confirmPasswordController.text.trim();
+=======
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
 
                       // Check if first name and last name contain only alphabetic characters
                       if (!RegExp(r'^[a-zA-Z]+$').hasMatch(firstName)) {
@@ -224,7 +243,12 @@ class _RegisterPageState extends State<RegisterPage> {
                         });
                       } else {
                         // Add your registration logic here
+<<<<<<< HEAD
                         registerWithEmailAndPassword(); // Call registration function
+=======
+                        // This is just an example
+                        print('Register button tapped');
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                       }
                     },
                     child: Container(
@@ -246,6 +270,53 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                   ),
+<<<<<<< HEAD
+=======
+                  const SizedBox(height: 20),
+                  Row(
+                    children: <Widget>[
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.pop(context);
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.all(16),
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.white,
+                          ),
+                          child: const Icon(
+                            Icons.arrow_back,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                      const Spacer(),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const HomePageWidget(),
+                              fullscreenDialog: false,
+                            ),
+                          );
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.all(16),
+                          decoration: const BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Colors.white,
+                          ),
+                          child: const Icon(
+                            Icons.arrow_forward,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                 ],
               ),
             ),

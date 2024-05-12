@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+<<<<<<< HEAD
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:table_calendar/table_calendar.dart';
@@ -6,6 +7,17 @@ import 'About_us.dart';
 import 'review.dart';
 import 'shophome_page.dart';
 import 'flower_details_page.dart';
+=======
+import 'package:flowershop/pages/flower_details_page.dart';
+import 'package:flowershop/pages/signin_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:table_calendar/table_calendar.dart';
+
+import 'About_us.dart';
+import 'review.dart';
+import 'shophome_page.dart';
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
 
 Map<DateTime, List<String>> getThaiEventsFor2024() {
   Map<DateTime, List<String>> thaiEvents2024 = {
@@ -211,8 +223,13 @@ class HomePageWidget extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
+<<<<<<< HEAD
                             builder: (context) => FlowerDetailsPage(),
                                 ), // Navigate to FlowerDetailsPage
+=======
+                            builder: (context) =>
+                                const FlowerDetailsPage()), // Navigate to FlowerDetailsPage
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                       );
                     },
                   ),
@@ -225,7 +242,11 @@ class HomePageWidget extends StatelessWidget {
                       color: Color.fromARGB(255, 248, 245, 238),
                     ),
                     title: const Text(
+<<<<<<< HEAD
                       'Let Guess!',
+=======
+                      'Occasion',
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                       style: TextStyle(color: Colors.white),
                     ),
                     onTap: () {
@@ -264,6 +285,29 @@ class HomePageWidget extends StatelessWidget {
                 ),
               ],
             ),
+<<<<<<< HEAD
+=======
+            Padding(
+              padding: const EdgeInsets.only(left: 25.0),
+              child: ListTile(
+                leading: const Icon(
+                  Icons.logout,
+                  color: Color.fromARGB(255, 248, 245, 238),
+                ),
+                title: const Text(
+                  'Log out',
+                  style: TextStyle(color: Colors.white),
+                ),
+                onTap: () {
+                  Navigator.pop(context); // Close the drawer
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SignInScreen()),
+                  );
+                },
+              ),
+            ),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
           ],
         ),
       ),

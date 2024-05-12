@@ -5,7 +5,11 @@ class AboutUsPage extends StatelessWidget {
   const AboutUsPage({super.key});
 
   // Define _launchMap function outside of the build method
+<<<<<<< HEAD
   void _launchMap() async {  
+=======
+  void _launchMap() async {
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
     const url = 'https://maps.app.goo.gl/MF7VmDypjtPR2YKN7';
 
     if (await canLaunch(url)) {
@@ -30,6 +34,7 @@ class AboutUsPage extends StatelessWidget {
                   collapseMode: CollapseMode.pin,
                   background: Container(
                     decoration: const BoxDecoration(
+<<<<<<< HEAD
                       image: DecorationImage(
                         image: AssetImage('lib/image/10.jpg'), // Adjust the path to your image
                         fit: BoxFit.cover
@@ -45,12 +50,27 @@ class AboutUsPage extends StatelessWidget {
                           ]
                         )
                       ),
+=======
+                        image: DecorationImage(
+                            image: AssetImage(
+                                'lib/image/10.jpg'), // Adjust the path to your image
+                            fit: BoxFit.cover)),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                              begin: Alignment.bottomRight,
+                              colors: [
+                            Colors.black,
+                            Colors.black.withOpacity(.3)
+                          ])),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                       child: const Padding(
                         padding: EdgeInsets.all(20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: <Widget>[
+<<<<<<< HEAD
                             Text("HEAVEN GARDEN", style: 
                               TextStyle(color: Color(0xFFF2BED1), fontWeight: FontWeight.bold, fontSize: 35)
                             ,),
@@ -59,6 +79,30 @@ class AboutUsPage extends StatelessWidget {
                               children: <Widget>[
                                 Text("Email: Heaven11@gmail.com", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14),),
                                 SizedBox(width: 20,),
+=======
+                            Text(
+                              "HEAVEN GARDEN",
+                              style: TextStyle(
+                                  color: Color(0xFFF2BED1),
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 35),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            Row(
+                              children: <Widget>[
+                                Text(
+                                  "Email: Heaven11@gmail.com",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 14),
+                                ),
+                                SizedBox(
+                                  width: 20,
+                                ),
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                               ],
                             )
                           ],
@@ -75,6 +119,7 @@ class AboutUsPage extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
+<<<<<<< HEAD
                         Text("Exploring the beauty of flowers at Heaven Garden is an enchanting experience that captivates the soul and ignites the senses. As you step into this renowned flower shop, you're greeted by a kaleidoscope of colors and fragrances that dance in the air, creating an atmosphere of pure delight.", 
                         style: TextStyle(color: Colors.grey, height: 1.4),),
                         SizedBox(height: 40,),
@@ -87,6 +132,52 @@ class AboutUsPage extends StatelessWidget {
                         Text("April, 3rd 2025, Thailand", style: TextStyle(color: Colors.grey),),
                         SizedBox(height: 20,),
                         SizedBox(height: 120,)
+=======
+                        Text(
+                          "Exploring the beauty of flowers at Heaven Garden is an enchanting experience that captivates the soul and ignites the senses. As you step into this renowned flower shop, you're greeted by a kaleidoscope of colors and fragrances that dance in the air, creating an atmosphere of pure delight.",
+                          style: TextStyle(color: Colors.grey, height: 1.4),
+                        ),
+                        SizedBox(
+                          height: 40,
+                        ),
+                        Text(
+                          "Address",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "Dreamland Manor, 123 Sukhumvit Road, Bangkok 10110, Thailand.",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          "Founded",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          "April, 3rd 2025, Thailand",
+                          style: TextStyle(color: Colors.grey),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        SizedBox(
+                          height: 120,
+                        )
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
                       ],
                     ),
                   )
@@ -126,4 +217,7 @@ class AboutUsPage extends StatelessWidget {
     );
   }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5b0521ddeb5618326b7a10e8ee4bcca483de5f74
